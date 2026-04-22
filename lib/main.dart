@@ -1,22 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const TMBPage());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Calculadora de Saúde',
-      theme: ThemeData(primarySwatch: Colors.cyan),
-      home: const TMBPage(),
-    );
-  }
-}
 
 class TMBPage extends StatefulWidget {
   const TMBPage({super.key});
@@ -79,7 +67,8 @@ class _TMBPageState extends State<TMBPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Calculadora de Saúde'),
+        title: const Text('Calculadora TMB'),
+        backgroundColor: Colors.cyan,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
